@@ -58,6 +58,7 @@ h5{
 }
 .container{
   max-width: 992px !important;
+  
 }
 .navbar-dark {
   --bs-navbar-color: rgb(255, 255, 255) !important;
@@ -260,16 +261,18 @@ padding-top: 0.5em;
   border-width: 0 0 2px 0;
 }
 .bgTriangle {
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     background-color: white;
+    overflow:hidden;
   }
 .bgTriangle2:after{
   content: ' ';
   border-top: 10vh solid #038aff ;
-  border-right: 100vw solid transparent;
+  border-right: 99vw solid transparent;
   width: 0;
   position: absolute;
+  overflow:hidden;
 }
 .navbar .navbar-nav .nav-item a{
   padding:1em;
@@ -444,20 +447,30 @@ position: relative;
   height: auto;
   margin-top: 5em;
   padding-top: 5em;
-  
+  overflow: auto;
+}
+
+
+#awards .row .reviewBox{
+  display: inline-block !important;
+}
+#awards .row .reviewBoxDown{
+  display: inline-block !important;
 }
 #awards .awardsbgTriangle {
   margin-top: 5em;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     background-color: white;
+    overflow:hidden;
 }
 #awards .awardsbgTriangle2:after{
   content: ' ';
   border-top: 10vh solid #FAFBFF ;
-  border-right: 100vw solid transparent;
+  border-right: 99vw solid transparent;
   width: 0;
   position: absolute;
+  overflow:hidden;
 }
 
 .reviewBox{
@@ -466,9 +479,9 @@ position: relative;
   padding: 2.5em 2em;
   border-radius: 0.5em;
   background-color: #FFFFFF;
-  box-shadow: 0.2em 0.2em 1em #00000015;
+  box-shadow: 0em 0.2em 1em #00000015;
   border: 1px solid rgb(225, 225, 225);
-  
+  margin-top: 1em;
   
 }
 .reviewBox:hover{
@@ -477,9 +490,9 @@ position: relative;
   padding: 2.5em 2em;
   border-radius: 0.5em;
   background-color: #fffaef;
-  box-shadow: 0.2em 0.2em 1em #00000015;
+  box-shadow: 0em 1.6em 2em #00000020;
   border: 1px solid rgb(225, 225, 225);
- 
+  margin-top: 0em;
   transition: 0.5s ease;
   
 }
@@ -499,9 +512,9 @@ position: relative;
   padding: 2.5em 2em;
   border-radius: 0.5em;
   background-color: #fffaef;
-  box-shadow: 0.2em 0.2em 1em #00000015;
+  box-shadow: 0em 1.6em 2em #00000020;
   border: 1px solid rgb(225, 225, 225);
-  
+  margin-top: 3em;
   transition: 0.5s ease;
   
 }
@@ -597,16 +610,18 @@ text-align: center;
 }
 #answers .awardsbgTriangle {
   margin-top: 5em;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     background-color: #161348;
+    overflow:hidden;
 }
 #answers .awardsbgTriangle2:after{
   content: ' ';
   border-top: 10vh solid #FFFFFF ;
-  border-right: 100vw solid transparent;
+  border-right: 99vw solid transparent;
   width: 0;
   position: absolute;
+  overflow:hidden;
 }
 #footer p{
   color: #FFFFFF ;
